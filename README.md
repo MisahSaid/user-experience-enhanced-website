@@ -18,7 +18,13 @@ Tumi Mundo is een app speciaal ontworpen voor ouders om hun kinderen van 0-4 jaa
 Via de app leer je namelijk aan de hand van verhalen een taal! Super gaaf dus. 
 
 ## Gebruik
-<!-- Bij Gebruik staat de user story, hoe het werkt en wat je er mee kan. -->
+Ik heb dit keer gekozen om de volgende user stories uit te werken:
+1.) Als gebruiker wil ik mijn instellingen kunnen opslaan;
+2.) Als gebruiker wil ik een playlist kunnen aanmaken. 
+
+Het doel van de eerste user story is eenvoudig: gebruikers moeten een optie kunnen selecteren in de instellingen voor automatisch opslaan. Dit bespaart hen tijd en moeite omdat ze dan niet telkens dezelfde instellingen opnieuw hoeven in te stellen. Dit kan namelijk frustrerend zijn. Het idee is dus om eerder gekozen instellingen te kunnen opslaan en automatisch toe te passen wanneer de 'auto mode' is ingeschakeld. Dit verbetert de gebruikerservaring, wat resulteert in positieve feedback voor zowel de eindgebruikers als de opdrachtgevers.
+
+Het doel van de tweede user story is dat gebruikers verhalen kunnen opslaan in een playlist, vergelijkbaar met hoe dit bij Spotify werkt. Dit maakt het eenvoudiger om verhalen snel terug te vinden. Met een playlist kunnen gebruikers gemakkelijk hun favoriete verhalen afspelen zonder telkens op zoek te moeten.
 
 ## Kenmerken
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? Misschien heb je iets met NodeJS gedaan, of heb je een framwork of library gebruikt? -->
