@@ -1,7 +1,7 @@
 > De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
 
-# Titel
-PO.2 Tumi Mundo
+# PO.2 Tumi Mundo
+
 
 ## Inhoudsopgave
 
