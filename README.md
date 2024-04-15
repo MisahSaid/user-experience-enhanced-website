@@ -31,7 +31,12 @@ Het doel van de tweede user story is dat gebruikers verhalen kunnen opslaan in e
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? Misschien heb je iets met NodeJS gedaan, of heb je een framwork of library gebruikt? -->
 
 ## Installatie
-Ik heb voor dit project Node en JSON gebruikt. Je kunt dit makkelijk gebruiken door ..
+Ik heb voor dit project Node en JSON gebruikt. Hoe begin je dan dit project?
+
+### Opstarten
+Om te beginnen moet je Node gaan installeren, dit doe je in de terminal!
+Vervolgens type je 'nmp start' en enter (dit schrijf je in de terminal).
+
 
 De bronnen die eventueel kunnen helpen om op weg te komen:
 
