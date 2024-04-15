@@ -19,7 +19,9 @@ Via de app leer je namelijk aan de hand van verhalen een taal! Super gaaf dus.
 
 ## Gebruik
 Ik heb dit keer gekozen om de volgende user stories uit te werken:
+
 1.) Als gebruiker wil ik mijn instellingen kunnen opslaan;
+
 2.) Als gebruiker wil ik een playlist kunnen aanmaken. 
 
 Het doel van de eerste user story is eenvoudig: gebruikers moeten een optie kunnen selecteren in de instellingen voor automatisch opslaan. Dit bespaart hen tijd en moeite omdat ze dan niet telkens dezelfde instellingen opnieuw hoeven in te stellen. Dit kan namelijk frustrerend zijn. Het idee is dus om eerder gekozen instellingen te kunnen opslaan en automatisch toe te passen wanneer de 'auto mode' is ingeschakeld. Dit verbetert de gebruikerservaring, wat resulteert in positieve feedback voor zowel de eindgebruikers als de opdrachtgevers.
