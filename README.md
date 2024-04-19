@@ -37,6 +37,10 @@ Ik heb voor dit project Node en JSON gebruikt. Hoe begin je dan dit project?
 Om te beginnen moet je Node gaan installeren, dit doe je in de terminal!
 Vervolgens type je 'nmp start' en enter (dit schrijf je in de terminal).
 
+1. Open de terminal en voer het commando npm install in. Je gebruikt NPM om Express inclusief alle afhankelijkheden te installeren.
+2. Start je server met npm start, en onderzoek wat de code op dit moment doet.
+3. Pas alles aan naar eigen wens.
+
 
 De bronnen die eventueel kunnen helpen om op weg te komen:
 
