@@ -1,0 +1,11 @@
+body{
+    background: linear-gradient(180deg, rgba(71,24,113,1) 0%, rgba(20,33,81,1) 100%);
+    color: white;
+    font-family: var(--regularfont);
+    margin: 1em;
+}
+
+h1{
+    text-align: center;
+}
+
