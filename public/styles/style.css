@@ -3,9 +3,16 @@ body{
     color: white;
     font-family: var(--regularfont);
     margin: 1em;
+    font-family: 'Poppins-Regular', sans-serif;
 }
 
-h1{
-    text-align: center;
+
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url('assets/fonts/Poppins-Regular.ttf') format('truetype');
 }
+
+
+
+
 

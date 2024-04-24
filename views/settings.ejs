@@ -17,15 +17,49 @@
         <p>Hold down the button to hear a preview of the voices</p>
 
         <div class="speakers">
-            <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="38" y="34" width="5.65685" height="48.0833" rx="2.82843" transform="rotate(135 38 34)" fill="#1967AE"/>
-                <rect x="3.99994" y="38" width="5.65685" height="48.0833" rx="2.82843" transform="rotate(-135 3.99994 38)" fill="#2382DA"/>
-            </svg>
-            <p>read aloud yourself</p>
+            <div id="read-self">
+                <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="38" y="34" width="5.65685" height="48.0833" rx="2.82843" transform="rotate(135 38 34)" fill="#1967AE"/>
+                    <rect x="3.99994" y="38" width="5.65685" height="48.0833" rx="2.82843" transform="rotate(-135 3.99994 38)" fill="#2382DA"/>
+                </svg>
+                <p>read aloud yourself</p>
+            </div>
 
-            
+            <div id="speaker">
+                <% speaker.forEach(function(speaker) { %>
+                    <div class="speaker-item">
+                        <h3><%= speaker.name %></h3>
+                        <p><%= speaker.gender %></p>
+                    </div>
+                <% }) %>      
+            </div>
         </div>
     </div>
+    
+
+    <h4>Pick a background</h4>
+    <p>Pick a background during the story</p>
+
+    <div id="thema">
+        <label for="1">
+            <div class="1"><img src="./assets/night.svg" alt="night time theme"></div>
+            <input type="radio" name="thema" id="1" >
+        </label>
+
+        <label for="2">
+            <div><img src="./assets/day.svg" alt="day time theme"></div>
+            <input type="radio" name="thema" id="2" >
+        </label>
+
+        <label for="3">
+            <div><img src="./assets/sunset.svg" alt="sunset theme"></div>
+            <input type="radio" name="thema" id="3" >
+        </label>
+    </div>
+
+    <!-- volume -->
+    <h5>Volume </h1>
+    <input class="volume-slider" type="range" min="0" max="100" value="50">   
 </main>
 
 <%- include('./partials/footer') %>

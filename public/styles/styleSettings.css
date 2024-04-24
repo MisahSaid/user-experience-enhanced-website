@@ -1,6 +1,95 @@
+h1, h2, h3, h4, h5{
+    font-size: 20px;
+}
 
+p{
+    font-size: 12px;
+}
+
+/*  */
 
 header{
     display: flex;
     flex-direction: row;
+}
+
+.speakers {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+#read-self {
+    background-color: white;
+    color: black;
+    border-radius: 5%;
+}
+
+.speaker-item {
+    background-color: white;
+    color: black;
+    border-radius: 5%;
+    padding: 1em;
+    gap: 1em;
+
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+/* pick a background */
+img:hover{
+    background-color: blueviolet;
+    padding: .2em;
+    border-radius: 5%;
+}
+
+img:focus{
+    background-color: aquamarine;
+    padding: .2em;
+    border-radius: 5%;
+}
+
+input{
+    appearance: none;
+    padding: none;
+    margin: 1em;
+}
+
+#thema{
+    display: flex;
+    flex-direction: row;
+    gap: .5em;
+}
+
+label:has(input:checked) div {
+    outline: solid .3em blueviolet;
+    border-radius: 5%;
+    background-color: blueviolet;
+    
+}
+
+label{
+    width: min-content;
+    height: 100%;
+}
+
+h4{
+    margin-bottom: 0;
+
+}
+
+/* volume */
+h5{
+    margin-bottom: 0;
+}
+
+.volume-slider{
+    margin: 0;
+    margin-top: .5em;
+}
+
+input{
+    max-width: 40vw;
 }
