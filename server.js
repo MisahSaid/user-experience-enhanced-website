@@ -13,6 +13,9 @@ const squadData = await fetchJson(apiUrl + '/squad')
 // Maak een nieuwe express app aan
 const app = express()
 
+// zorg dat werken met request data makkelijker wordt
+app.use(express.urlencoded({extended: true}))
+
 // Stel ejs in als template engine
 app.set('view engine', 'ejs')
 
@@ -25,6 +28,7 @@ app.use(express.static('public'))
 // Stel het poortnummer in waar express op moet gaan luisteren
 app.set('port', process.env.PORT || 8000)
 
+let theme = "dark" 
 
 // TODO: routes voor deze pizza applicatie.. GET
 app.get('/', function(request, response) {
@@ -64,9 +68,16 @@ app.get('/playlistsettings', function(request, response) {
 app.get('/settings', function (request, response){
 
   fetchJson('https://fdnd-agency.directus.app/items/tm_speaker_profile').then((speakerDataUitDeAPI) => {
-    response.render('settings', {speaker: speakerDataUitDeAPI.data})
+    response.render('settings', {speaker: speakerDataUitDeAPI.data, theme:theme})
   });
-  
+})
+
+// post route
+app.post('/settings', function (request, response){
+  console.log(request.body.thema) 
+
+  theme = request.body.thema 
+  response.redirect(303, '/settings')
 })
 
 
@@ -75,3 +86,7 @@ app.listen(app.get('port'), function () {
   // Toon een bericht in de console en geef het poortnummer door
   console.log(`Application started on http://localhost:${app.get('port')}`)
 })
+
+
+
+

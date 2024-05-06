@@ -9,11 +9,6 @@
 <main>
     <div>
         <h2>Story Settings</h2>
-        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M9.86739 14.6591C10.2126 14.6591 10.4924 14.3792 10.4924 14.0341V9.03406C10.4924 8.68888 10.2126 8.40906 9.86739 8.40906C9.52221 8.40906 9.24239 8.68888 9.24239 9.03406V14.0341C9.24239 14.3792 9.52221 14.6591 9.86739 14.6591Z" fill="white"/>
-            <path d="M9.86739 5.70072C10.3276 5.70072 10.7007 6.07382 10.7007 6.53406C10.7007 6.99429 10.3276 7.36739 9.86739 7.36739C9.40715 7.36739 9.03406 6.99429 9.03406 6.53406C9.03406 6.07382 9.40715 5.70072 9.86739 5.70072Z" fill="white"/>
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.909058 9.86739C0.909058 4.91984 4.91984 0.909058 9.86739 0.909058C14.8149 0.909058 18.8257 4.91984 18.8257 9.86739C18.8257 14.8149 14.8149 18.8257 9.86739 18.8257C4.91984 18.8257 0.909058 14.8149 0.909058 9.86739ZM9.86739 2.15906C5.6102 2.15906 2.15906 5.6102 2.15906 9.86739C2.15906 14.1246 5.6102 17.5757 9.86739 17.5757C14.1246 17.5757 17.5757 14.1246 17.5757 9.86739C17.5757 5.6102 14.1246 2.15906 9.86739 2.15906Z" fill="white"/>
-        </svg>
         <p>Hold down the button to hear a preview of the voices</p>
 
         <div class="speakers">
@@ -40,22 +35,27 @@
     <h4>Pick a background</h4>
     <p>Pick a background during the story</p>
 
-    <div id="thema">
+
+    <!-- POST -->
+    <%= theme %>
+    <form method="POST" action="/settings" id="thema">
         <label for="1">
             <div class="1"><img src="./assets/night.svg" alt="night time theme"></div>
-            <input type="radio" name="thema" id="1" >
+            <input type="radio" name="thema" id="1" value="dark">
         </label>
 
         <label for="2">
             <div><img src="./assets/day.svg" alt="day time theme"></div>
-            <input type="radio" name="thema" id="2" >
+            <input type="radio" name="thema" id="2" value="day">
         </label>
 
         <label for="3">
             <div><img src="./assets/sunset.svg" alt="sunset theme"></div>
-            <input type="radio" name="thema" id="3" >
+            <input type="radio" name="thema" id="3" value="sunset">
         </label>
-    </div>
+
+        <button type="submit">set</button>
+    </form>
 
     <!-- volume -->
     <h5>Volume </h1>
