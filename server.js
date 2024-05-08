@@ -53,7 +53,6 @@ app.get('/stories', function(request, response) {
   fetchJson('https://fdnd-agency.directus.app/items/tm_story').then((storiesDataUitDeAPI) => {
     response.render('stories', {stories: storiesDataUitDeAPI.data})
   });
-  
 })
 
 app.get('/playlistsettings', function(request, response) {
@@ -61,9 +60,7 @@ app.get('/playlistsettings', function(request, response) {
   fetchJson('https://fdnd-agency.directus.app/items/tm_speaker_profile').then((speakerDataUitDeAPI) => {
     response.render('playlistsettings', {speaker: speakerDataUitDeAPI.data})
   });
-  
 })
-
 
 app.get('/settings', function (request, response){
 
@@ -72,6 +69,19 @@ app.get('/settings', function (request, response){
   });
 })
 
+app.get('/addplaylist', function (request, response){
+
+  fetchJson('https://fdnd-agency.directus.app/items/tm_speaker_profile').then((speakerDataUitDeAPI) => {
+    response.render('addplaylist', {speaker: speakerDataUitDeAPI.data})
+  });
+})
+
+app.get('/newplaylist', function (request, response){
+
+  fetchJson('https://fdnd-agency.directus.app/items/tm_speaker_profile').then((speakerDataUitDeAPI) => {
+    response.render('newplaylist', {speaker: speakerDataUitDeAPI.data})
+  });
+})
 // post route
 app.post('/settings', function (request, response){
   console.log(request.body.thema) 

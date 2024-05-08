@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/addplaylist.css">
+    <script src="./script.js"></script>
+    <title>TuMi Mundo</title>
+  </head>
+  <body>  
+
+<header>
+    <a href="/newplaylist"><h1>Nieuwe Playlist</h1></a>
+    <div class="close">
+        <a href="/"><img src="./assets/close-outline.svg"></a>
+        <p>Close</p>
+    </div>
+</header>
+
+<!-- content -->
+<main>
+    <form method="GET" action="/" id="newplaylist">
+        <!-- default 1 -->
+        <div>
+            <img src="/assets/day.svg" alt="Day">
+            <p>Sleepy Time!</p>
+            <label for="day1">
+                <input type="radio" id="day1" name="playlist" value="day">
+            </label>
+        </div>
+        
+        <!-- default 2 -->
+        <div>
+            <img src="/assets/day.svg" alt="Day">
+            <p>Sleepy Time!</p>
+            <label for="day2">
+                <input type="radio" id="day2" name="playlist" value="day">
+            </label>
+        </div>
+    
+        <!-- default 3 -->
+        <div>
+            <img src="/assets/day.svg" alt="Day">
+            <p>Sleepy Time!</p>
+            <label for="day3">
+                <input type="radio" id="day3" name="playlist" value="day">
+            </label>
+        </div>
+
+        <button type="submit">Save</button>
+    </form>
+    
+</main>
+
+

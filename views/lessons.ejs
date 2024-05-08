@@ -1,4 +1,14 @@
-<%- include('./partials/head') %>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/styleLessons.css">
+    <script src="./script.js"></script>
+    <title>TuMi Mundo</title>
+  </head>
+<body>  
 
 <header>
     <h1>Lessons</h1>
@@ -11,8 +21,21 @@
 
 
 <main>
-    <h1>Own playlist</h1>
+    <h2>Own playlist</h2>
         <div id="own-playlist">
+            <form method="dialog">
+                <div class="add-playlist">
+                    <a href="/addplaylist">
+                        <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="30" width="8" height="68" rx="4" fill="white"/>
+                        <rect x="68" y="30" width="8" height="68" rx="4" transform="rotate(90 68 30)" fill="white"/>
+                         </svg>
+                        <p><b>Make a playlist !</b></p>
+                        <p>Add your favorite stories in one playlist</p>
+                    </a>
+                </div>    
+            </form>
+
             <div class="default-playlist">
                 <svg width="112" height="95" viewBox="0 0 112 95" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g filter="url(#filter0_i_1_2053)">
@@ -58,17 +81,64 @@
                 <p>31 min. 55 sec</p>
             </div>
         
-            <div class="add-playlist">
-                <a href="#">
-                    <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="30" width="8" height="68" rx="4" fill="white"/>
-                    <rect x="68" y="30" width="8" height="68" rx="4" transform="rotate(90 68 30)" fill="white"/>
-                    </svg>
-                </a>
-                <p><b>Make a playlist !</b></p>
-                <p>Add your favorite stories in one playlist</p>
-            </div>    
         </div>
+
+        <button onclick="showPlaylistDialog()">Add New Playlist</button>
+
+        <dialog id="playlist-dialog">
+            <button>New Playlist</button>
+            <div>
+                <form>
+                    <img src="/assets/day.svg" alt="Day">
+                    <p>Sleepy Time!</p>
+                    <label for="day1">
+                        <input type="radio" id="day1" name="playlist" value="day">
+                    </label>
+
+                    <button type="submit">Add To Playlist</button>
+                    <button><a href="/">Cancel</a></button>
+                </form>
+            </div>
+            
+            
+        </dialog>
+
+        <script>
+            const dialog = document.getElementById("playlist-dialog")
+            
+           //  dit zorgt ervoor dat de dialog open en dicht kan
+            function showPlaylistDialog(){
+               dialog.showModal()
+            }
+            function closePlaylistDialog(){
+               dialog.close()
+            }
+       </script>
+
+
+        <!-- <button onclick="showLoginDialog()">login</button>
+
+        <dialog id="login-dialog">
+            <h3>Login</h3>
+            <form>
+                <input type="email">
+                <input type="password">
+                <button>Login</button>
+                <button onclick="closeLoginDialog()" type="button">Cancel</button>
+            </form>
+        </dialog>
+        
+        <script>
+             const dialog = document.getElementById("login-dialog")
+             
+            //  dit zorgt ervoor dat de dialog open en dicht kan
+             function showLoginDialog(){
+                dialog.showModal()
+             }
+             function closeLoginDialog(){
+                dialog.close()
+             }
+        </script> -->
 </main>
 
 <%- include('./partials/footer') %>
